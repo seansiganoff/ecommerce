@@ -1,0 +1,14 @@
+
+
+.watch-list-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.watch {
+    height: 20rem;
+    width: 20rem;
+}
