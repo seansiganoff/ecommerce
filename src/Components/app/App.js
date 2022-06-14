@@ -3,8 +3,9 @@ import './App.css';
 import Nav from '../nav/Nav';
 import { Route, Routes } from 'react-router-dom';
 import Home from '../home/Home';
-import Cart from '../cart/Cart';
-import WatchView from '../watches/WatchView';
+import WatchView from '../watches/Showcase';
+import Login from '../pages/login';
+import Register from '../pages/register';
 
 
 function App() {
@@ -12,10 +13,11 @@ function App() {
     <div>
       <Nav />
       <Routes>
-        <Route path="/view" element={<WatchView />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/showcase" element={<WatchView />} />
+        <Route path="/users/register" element={<Register />} />
+        <Route path="/" element={<Home />} />
         
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/users/login" element={<Login />} />
       </Routes>
     </div>
   );

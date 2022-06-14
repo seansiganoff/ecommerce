@@ -4,21 +4,27 @@ import WatchList from '../watches/WatchList';
 
 
 export default function Home() {
+  const dayjust = require('../../images/dayjust2.webp')
+  const president = require('../../images/gold.webp')
+  const president2 = require('../../images/platinum.webp')
+  const dayjust2 = require('../../images/hh.webp')
+  const daytona =require('../../images/daytona.webp')
+  const sub = require('../../images/sub.webp')
   return (
     <div className='header'>
         <div className='header-overlay'>
             <h1>Welcome to the world of watches</h1>
         </div>
         <WatchList 
-        watch1={require('../../images/dayjust2.webp')}
-        watch2={require('../../images/president.webp')}
-        watch3={require('../../images/president2.webp')}
+        watch1={dayjust}
+        watch2={president}
+        watch3={president2}
       />
 
       <WatchList 
-        watch1={require('../../images/sub.webp')}
-        watch2={require('../../images/hh.webp')}
-        watch3={require('../../images/daytone.webp')}
+        watch1={sub}
+        watch2={dayjust2}
+        watch3={daytona}
       />
     </div>
   )

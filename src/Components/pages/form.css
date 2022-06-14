@@ -1,0 +1,42 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.form-container {
+    background-image: url('../../images/m128238-0069_1901ac_007.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.form {
+    border: 2px black solid;
+    display: grid;
+    padding: 1rem;
+    color: rgba(255, 255, 255, 0.728);
+    border-radius: 5px;
+    background-color: rgba(124, 124, 124, 0.574);
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+}
+
+p {
+    font-size: 0.7rem;
+}

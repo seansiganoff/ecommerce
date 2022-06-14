@@ -49,6 +49,11 @@ body {
     background-color: rgba(151, 151, 151, 0.214);
 }
 
-
+a:link {
+    color: rgb(255, 216, 119);
+  }
+  a:visited {
+    color: whitesmoke;
+  }
 
 

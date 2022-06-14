@@ -3,6 +3,7 @@ import './style.css'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
 
+
 export default function Nav() {
   return (
         <nav className='nav'>
@@ -10,8 +11,9 @@ export default function Nav() {
                 Site Name
             </Link>
             <ul>
-                <CustomeLink to="/home">Home</CustomeLink>
-                <CustomeLink to="/cart">Cart</CustomeLink>
+                <CustomeLink to="/new">new</CustomeLink>
+                <CustomeLink to="/">Home</CustomeLink>
+                <CustomeLink to="/users/login">Login</CustomeLink>
             </ul>
         </nav>
   )
