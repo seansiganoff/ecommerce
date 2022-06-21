@@ -6,6 +6,8 @@
     justify-content: center;
     align-items: center;
     background: white;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.1rem;
 }
 
 .watch-container {
@@ -24,11 +26,12 @@
 
 }
 
-a {
+.watch-container a {
+    color: rgba(97, 97, 97, 0.984);
     text-decoration: none;
 }
 
-a:visited {
-    color: rgb(97, 97, 97);
+.watch-container a:visited {
+    color: rgba(97, 97, 97, 0.154);
     
 }

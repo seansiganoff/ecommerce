@@ -1,9 +1,3 @@
-body {
-    color: whitesmoke;
-    margin: 0;
-    padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
 
 .showcase-container {
@@ -17,11 +11,13 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.727);
 }
 
-h1 {
-    font-size: 3rem;
-}
+
+
 img {
     height: 35rem;
     width: 35rem;
@@ -32,7 +28,8 @@ img {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding: 2rem 0rem;
+
 }
 .showcase-left-side {
     height: 70%;
@@ -41,31 +38,59 @@ img {
     width: 25%;
     display: grid;
     justify-content: center;
-    align-items: center;
-    color: whitesmoke;
+    align-items: left;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+.showcase-container h1 {
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: left;
 }
 
-.description-div {
+.showcase-left-side p {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.price {
+    font-size: 1.1rem;
+    
+}
+
+.showcase-description-div {
     margin: 0 auto;
-    padding: 2rem;
     width: 40%;
-    font-weight: 100;
     display: grid;
     justify-content: center;
     align-items: center;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.674);
-    border-radius: 15px;
+    background-color: whitesmoke;
+    width: 100%;
+    color: rgb(84, 84, 84);
+    text-align: center;
+    padding: 4rem;
+    letter-spacing: 0.1rem;
 }
-.watch-header-div {
-    font-size: 1.5rem;
+.watch-description-div {
+    font-size: 3rem;
     margin-bottom: 1rem;
-    
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 900;
+    padding-bottom: 4rem;
 }
 
-.watch-description-div {
-    font-size: 1rem;
-    font-weight: 100;
+.watch-info-div {
+    font-size: 0.8rem;
     margin-bottom: 1rem;
-    
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.674);
+    color: whitesmoke;
+    padding: 2rem;
+    border-radius: 10px;
+    font-weight: 900;
+    text-align: left;
 }
