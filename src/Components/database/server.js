@@ -32,6 +32,8 @@ app.get("/", (req, res) => {
 
 });
 
+
+
 app.get("/users/register", checkAuthenticated, (req, res) => {
     res.render("register");
 })

@@ -14,6 +14,7 @@ export default function Nav() {
                 <CustomeLink to="/new">new</CustomeLink>
                 <CustomeLink to="/">Home</CustomeLink>
                 <CustomeLink to="/users/login">Login</CustomeLink>
+                <CustomeLink to="/users/cart">Cart</CustomeLink>
             </ul>
         </nav>
   )

@@ -8,7 +8,27 @@
     background: white;
 }
 
+.watch-container {
+    margin: 0;
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
 .watch {
     height: 20rem;
     width: 20rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(97, 97, 97);
+    
 }
