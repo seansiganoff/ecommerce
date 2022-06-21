@@ -1,17 +1,15 @@
-import React from 'react'
-import './showcase.css'
-import { useLocation } from 'react-router-dom'
+import React from 'react';
+import './showcase.css';
+import { useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export default function WatchView() {
   const location = useLocation();
   const {from} = location.state;
   const watch = from;
   
-  
-  
-  
   return (
-    <div className='showcase-container'>
+    <motion.div className='showcase-container' initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 1}}} exit={{opacity: 0}}>
       <div className='watch-container'>
         <div className='showcase-left-side'>
           <h1>{watch.model} </h1>
@@ -29,6 +27,6 @@ export default function WatchView() {
         <div className='watch-info-div'>{watch.info}</div>
       </div>
       
-    </div>
+    </motion.div>
   )
 }

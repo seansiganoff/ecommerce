@@ -1,7 +1,8 @@
 import React from 'react'
 import './home.css'
 import WatchList from '../watches/WatchList';
-
+import { motion } from 'framer-motion';
+ 
 
 export default function Home() {
   const datejusttwo = {
@@ -66,7 +67,7 @@ export default function Home() {
  
   
   return (
-    <div className='header'>
+    <motion.div className='header' initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 1}}} exit={{opacity: 0}}>
         <div className='header-overlay'>
             <h1>Welcome to the world of watches</h1>
         </div>
@@ -81,6 +82,6 @@ export default function Home() {
         watch2={gmt}
         watch3={daytona}
       />
-    </div>
+    </motion.div>
   )
 }

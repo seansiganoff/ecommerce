@@ -1,12 +1,11 @@
 import React from 'react';
 import './cart.css'
+import { motion } from 'framer-motion';
 
 export default function Cart() {
   return (
-    <div className='cart-container'>
-      <div className='cart-info'>
-        <h1>Stuff in cart</h1>
-      </div>
-    </div>
+    <motion.div className='cart-container' initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 1}}} exit={{opacity: 0}}>
+      
+    </motion.div>
   )
 }

@@ -1,9 +1,10 @@
 import React from 'react';
 import '../pages/form.css';
+import { motion } from 'framer-motion';
 
 export default function Register() {
     return (
-        <div className='form-container'>
+        <motion.div className='form-container' initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 1}}} exit={{opacity: 0}}>
             <div className='form'>
                 <form>
                     <h1>Register</h1>
@@ -22,7 +23,7 @@ export default function Register() {
                     <input type="submit" />
                 </form>
             </div>
-        </div>
+        </motion.div>
         
       )
 }
