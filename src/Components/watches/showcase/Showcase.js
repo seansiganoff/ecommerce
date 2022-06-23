@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './showcase.css';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
+
+
+
+
+
+
 
 export default function WatchView() {
   const location = useLocation();
   const {from} = location.state;
   const watch = from;
   
+  const cartsFromLocalStorage = JSON.parse(localStorage.getItem("cart") || "[]")
+  const [cart, setCart] = useState(cartsFromLocalStorage);
+  
+
+  
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart])
+  
+ 
+  
+
+
   return (
     <motion.div className='showcase-container' initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 1}}} exit={{opacity: 0}}>
       <div className='watch-container'>
@@ -16,8 +35,9 @@ export default function WatchView() {
           <br />
           <p>{watch.heading}</p>
           <br />
-          <div className='price'>{watch.price}</div>
+          <div className='price'>{watch.price}<br /><button className='add' onClick={() => setCart([...cart, watch])}>Add To Cart</button></div>
         </div>
+        
         <div className='showcase-right-side'>
           <img alt='Dayjust2' src={watch.url} />
         </div>

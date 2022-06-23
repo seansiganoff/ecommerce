@@ -1,19 +1,84 @@
 
-
+body {
+    margin: 0;
+}
 
 .cart-container {
-    min-height: 100vh;
     width: 100%;
-    background-color: white;
-    color: black;
+    height: 100%;
+    background-image: url('../../../images/Radcliffe_Baltimore_004_AR-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    margin: 0;
+}
+
+
+.cart-overlay {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.543);
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.cart-info {
-    margin: 0;
-    padding: 2rem;
-    border: 3px black solid;
+
+.cart-items-container {
+    border: 5px rgb(145, 145, 145) solid;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.766);
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    margin: 1rem;
+}
+
+.remove-from-cart-button {
+    background-color: rgb(193, 19, 19);
+    padding: 0.5rem;
+    color: whitesmoke;
+    border-radius: 8px;
+    border: 0px;
+}
+
+.remove-from-cart-button:hover {
+    padding: 0.6rem;
+}
+
+.cart-items {
+    margin: 1rem ;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-total {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cart-total-button {
+    padding: 0.5rem;
+}
+.cart-total-button button {
+    padding: 0.5rem;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.cart-item-text {
+    margin: 1rem;
+}
+
+.cart-items img {
+    height: 10rem;
+    width: 10rem;
 }

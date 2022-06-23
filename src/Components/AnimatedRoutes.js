@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Home from './home/Home';
-import WatchView from './watches/Showcase';
+import WatchView from './watches/showcase/Showcase';
 import Login from './pages/login';
 import Register from './pages/register';
 import Cart from './pages/cart/Cart';
