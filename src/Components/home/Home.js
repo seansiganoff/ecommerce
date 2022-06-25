@@ -6,13 +6,18 @@ import {datejusttwo, president, president2, gmt, sub, daytona} from '../watches/
  
 
 export default function Home() {
+
+
   
  
   
   return (
-    <motion.div className='header' initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 1}}} exit={{opacity: 0}}>
+    <motion.div className='header' initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 1}}} exit={{opacity: 0}} >
         <div className='header-overlay'>
-            <h1>Welcome to the world of watches</h1>
+          <div className='main-logo-container'>
+            <img alt='logo' className='header-logo' src={require('../../images/logo3.png')} />
+            <h1>ROLEX</h1>
+          </div>
         </div>
         <WatchList 
         watch1={datejusttwo}

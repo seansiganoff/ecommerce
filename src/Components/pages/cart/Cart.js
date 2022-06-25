@@ -8,6 +8,8 @@ import { useEffect, useState } from 'react';
 
 
 
+
+
 export default function Cart() {
   const cartsFromLocalStorage = JSON.parse(localStorage.getItem("cart") || "[]")
   const [cart, setCart] = useState(cartsFromLocalStorage);
@@ -18,7 +20,7 @@ export default function Cart() {
   }, [cart])
   
 
-
+  //Converts the numbers and add's the final sum
   function getGrandTotal() {
     const items = localStorage.getItem('cart');
     const parsedItems = JSON.parse(items);
@@ -28,11 +30,14 @@ export default function Cart() {
       sum += changeToInt;
     }
     let toString = sum.toString().split('')
-    const string1 = toString.slice(0, 2).join('')
-    const string2 = toString.slice(2).join('')
-    const stringOne = parseInt(string1);
-    const stringTwo = parseInt(string2);
-    const totalString = `Your total is $${stringOne},${stringTwo}`;
+    let string1;
+    if(toString.length === 6) {
+      string1 = toString.slice(0, 3).join('')
+    } else {
+      string1 = toString.slice(0, 2).join('')
+    }
+    const string2 = toString.slice(-3).join('')
+    const totalString = `Your total is $${string1},${string2}`;
     
     return (
       <div className='cart-total'>
@@ -45,18 +50,35 @@ export default function Cart() {
         <div className='cart-total-button'></div>
           <button className='remove-from-cart-button' onClick={() => clearCart()} >clear</button>
         <br />
-        
       </div>
     )
   }
 
 
   
+  
 
   function clearCart() {
     localStorage.clear();
     setCart([])
   }
+
+  function getPrice(item) {
+    let itemToString = item.toString().split('')
+    const string1 = itemToString.slice(0, 2).join('')
+    const string2 = itemToString.slice(-3).join('')
+    return `$${string1},${string2}`
+  }
+
+  function removeItemFromCart(item) {
+    console.log(item.id)
+    setCart(cartItems => cartItems.filter(items => items.id !== item.id))
+    if(cart.length > 1) {
+      window.location.reload(false)
+    }
+  }
+
+
  
   function getItemsInCart() {
     const items = localStorage.getItem('cart');
@@ -69,10 +91,10 @@ export default function Cart() {
         {items.model}<br />
         </div>
         <div className='cart-item-text'>
-        {items.price}<br />
+        {getPrice(items.price)}<br />
         </div>
         <div className='cart-item-text'>
-          <button className='remove-from-cart-button'>Remove From Cart</button>
+          <button className='remove-from-cart-button' onClick={() =>removeItemFromCart(items)}>Remove From Cart</button>
         </div>
       </div>
       <div>

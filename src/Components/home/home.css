@@ -1,24 +1,68 @@
 
 
 .header {
-    background-image: url("../../images/pp.jpeg");
+    background-image: url("../../images/rolexbackground7.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 100vh;
+    background-attachment: fixed;
+    transition: 0.5s;
+    animation-name: animate;
+    
+    animation-duration: 20s;
+    
+    animation-iteration-count: infinite;
+    
+    
+    font-family: 'Lato', sans-serif;
+   
+  }
+  @keyframes animate {
+    0%{
+      background-image: url('../../images/rolexbackground10.jpg');
+    } 20%{
+      background-image: url('../../images/rolexbackground13.jpg');
+    } 40%{
+      background-image: url('../../images/rolexbackground15.jpg');
+    } 60%{
+      background-image: url('../../images/rolexbackground14jpg.webp');
+    } 80%{
+      background-image: url('../../images/rolexbackground13.jpg');
+    } 100%{
+      background-image: url('../../images/rolexbackground3.jpg');
+    }
   }
   
   .header-overlay {
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.358);
+    background-color: rgba(0, 0, 0, 0.465);
     width: 100%;
     height: 100vh;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
-    color: whitesmoke;
+    
     font-weight: 100;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+  }
+
+  .main-logo-container {
+    text-align: center;
+  }
+  .header-logo {
+    height: 10rem;
+    width: 12rem;
+  }
+  .header-overlay h1 {
+    
+    color: rgba(255, 255, 255, 0.943);
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    font-weight: 900;
+    
+    
   }
   

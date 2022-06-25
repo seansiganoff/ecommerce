@@ -5,10 +5,11 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
 
 export default function Nav() {
+    
   return (
         <nav className='nav'>
             <Link to="/" className='site-title'>
-                Site Name
+                <img alt='logo' className='logo' src={require('../../images/logo3.png')} />
             </Link>
             <ul>
                 <CustomeLink to="/new">new</CustomeLink>
