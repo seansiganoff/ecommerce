@@ -7,15 +7,15 @@ import Register from './pages/register';
 import Cart from './pages/cart/Cart';
 
 
-function AnimatedRoutes() {
+function AnimatedRoutes({cart, handleAddProduct, handleRemoveProduct, handleClearCart, handleClearProduct}) {
     const location = useLocation();
     
     return (
         <Routes location={location} key={location.pathname}>
-            <Route path="/showcase" element={<WatchView />} />
+            <Route path="/showcase" element={<WatchView cart={cart} handleAddProduct={handleAddProduct}/>} />
             <Route path="/users/register" element={<Register />} />
             <Route path="/" element={<Home />} />
-            <Route path="/users/cart" element={<Cart />} />
+            <Route path="/users/cart" element={<Cart cart={cart} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} handleClearCart={handleClearCart} handleClearProduct={handleClearProduct}/>} />
             
             <Route path="/users/login" element={<Login />} />
         </Routes>

@@ -1,7 +1,6 @@
 import React from 'react';
 import './cart.css'
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
 
 
 
@@ -10,26 +9,16 @@ import { useEffect, useState } from 'react';
 
 
 
-export default function Cart() {
-  const cartsFromLocalStorage = JSON.parse(localStorage.getItem("cart") || "[]")
-  const [cart, setCart] = useState(cartsFromLocalStorage);
+
+export default function Cart({cart, handleAddProduct, handleRemoveProduct, handleClearCart, handleClearProduct}) {
   
   
-  useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(cart));
-  }, [cart])
-  
-
+  console.log(cart)
   //Converts the numbers and add's the final sum
   function getGrandTotal() {
-    const items = localStorage.getItem('cart');
-    const parsedItems = JSON.parse(items);
-    let sum = 0;
-    for(let i in parsedItems) {
-      const changeToInt = parseInt(parsedItems[i].price)
-      sum += changeToInt;
-    }
-    let toString = sum.toString().split('')
+    
+    const totalPrice = cart.reduce((price, item) => price + item.quantity * item.price, 0)
+    let toString = totalPrice.toString().split('')
     let string1;
     if(toString.length === 6) {
       string1 = toString.slice(0, 3).join('')
@@ -48,7 +37,7 @@ export default function Cart() {
           <button>Finish Shopping</button>
         </div>
         <div className='cart-total-button'></div>
-          <button className='remove-from-cart-button' onClick={() => clearCart()} >clear</button>
+          <button className='remove-from-cart-button' onClick={() => handleClearCart()}>clear</button>
         <br />
       </div>
     )
@@ -58,10 +47,7 @@ export default function Cart() {
   
   
 
-  function clearCart() {
-    localStorage.clear();
-    setCart([])
-  }
+  
 
   function getPrice(item) {
     let itemToString = item.toString().split('')
@@ -70,20 +56,11 @@ export default function Cart() {
     return `$${string1},${string2}`
   }
 
-  function removeItemFromCart(item) {
-    console.log(item.id)
-    setCart(cartItems => cartItems.filter(items => items.id !== item.id))
-    if(cart.length > 1) {
-      window.location.reload(false)
-    }
-  }
-
 
  
   function getItemsInCart() {
-    const items = localStorage.getItem('cart');
-    const parsedItems = JSON.parse(items);
-    return parsedItems.map(items => (
+    
+    return cart.map(items => (
 
     <div key={items.id} className='cart-items' > 
       <div>
@@ -94,11 +71,16 @@ export default function Cart() {
         {getPrice(items.price)}<br />
         </div>
         <div className='cart-item-text'>
-          <button className='remove-from-cart-button' onClick={() =>removeItemFromCart(items)}>Remove From Cart</button>
+          <button className='remove-from-cart-button' onClick={() => handleClearProduct(items)}>Remove From Cart</button>
         </div>
       </div>
       <div>
         <img alt={items.model} src={items.url} />
+        <div className='item-quantity'>
+          <button className='cart-minus-add-btn' onClick={() => handleRemoveProduct(items)}>-</button>
+          <div className='quantity-number'>{items.quantity}</div>
+          <button className='cart-minus-add-btn' onClick={() => handleAddProduct(items)}>+</button>
+        </div>
       </div>
     </div>
     ))

@@ -65,6 +65,14 @@ body {
 
 }
 
+.item-quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-minus-add-btn {
+    margin: 0 10px;
+}
 .cart-total-button {
     padding: 0.5rem;
 }
