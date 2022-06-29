@@ -1,11 +1,14 @@
 import React from 'react';
 import './nav.css'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+import {BsBag} from 'react-icons/bs'
+import Cart from '../pages/cart/Cart';
 
 
 
-export default function Nav() {
-    
+export default function Nav({cart}) {
+    const itemsInCart = cart.map(items => items.quantity);
+    const reducedSum = itemsInCart.reduce((prev, cur) => prev + cur, 0);
   return (
         <nav className='nav'>
             <Link to="/" className='site-title'>
@@ -15,7 +18,7 @@ export default function Nav() {
                 <CustomeLink to="/new">new</CustomeLink>
                 <CustomeLink to="/">Home</CustomeLink>
                 <CustomeLink to="/users/login">Login</CustomeLink>
-                <CustomeLink to="/users/cart">Cart</CustomeLink>
+                <CustomeLink to="/users/cart"><BsBag /><span className='cart-length'>{cart.length === 0 ? "" : reducedSum}</span></CustomeLink>
             </ul>
         </nav>
   )

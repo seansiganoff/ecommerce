@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+.cart-length {
+    font-size: 14px;
+}
+
 .nav {
     background-color: rgba(0, 0, 0, 0.435);
     color: white;

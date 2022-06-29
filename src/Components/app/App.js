@@ -38,6 +38,7 @@ function App() {
 
   
   
+  
   const handleClearCart = () => {
     setCart([]);
   }
@@ -45,7 +46,7 @@ function App() {
 
   return (
     <div>
-      <Nav />
+      <Nav cart={cart}/>
       <AnimatedRoutes 
       cart={cart} 
       handleAddProduct={handleAddProduct} 
