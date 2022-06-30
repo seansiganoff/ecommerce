@@ -1,15 +1,13 @@
 
 import './showcase.css';
-import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 
-export default function WatchView({handleAddProduct}) {
+export default function Showcase({ handleAddProduct}) {
   const location = useLocation();
-  const {from} = location.state;
-  const watch = from;
-  
-
+  const {getItem} = location.state;
+  let watch = getItem;
  
   function getPrice(item) {
     let itemToString = item.toString().split('')
@@ -37,6 +35,7 @@ export default function WatchView({handleAddProduct}) {
         <div className='watch-description-div' >{watch.description}</div>
         <div className='watch-info-div'>{watch.info}</div>
       </div>
+      
     </motion.div>
   )
 }

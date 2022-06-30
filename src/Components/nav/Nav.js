@@ -2,7 +2,7 @@ import React from 'react';
 import './nav.css'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import {BsBag} from 'react-icons/bs'
-import Cart from '../pages/cart/Cart';
+
 
 
 

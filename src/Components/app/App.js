@@ -9,10 +9,13 @@ function App() {
   const cartsFromLocalStorage = JSON.parse(localStorage.getItem("cart") || "[]")
   const [cart, setCart] = useState(cartsFromLocalStorage);
   
+  
+  
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart))
   }, [cart])
 
+  
   const handleClearProduct = (product) => {
     setCart(cart.filter(item => item.id !== product.id))
   }
@@ -53,6 +56,7 @@ function App() {
       handleRemoveProduct={handleRemoveProduct} 
       handleClearCart={handleClearCart}
       handleClearProduct={handleClearProduct}
+      
       />
     </div>
   );
