@@ -11,7 +11,7 @@ body {
 }
 
 .nav {
-    background-color: rgba(119, 118, 118, 0);
+    background-color: rgba(119, 118, 118, 0.612);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -24,6 +24,7 @@ body {
     z-index: 12;
     transition-timing-function: ease-in;
     transition: 0.2s;
+    font-size: 1.5rem;
 }
 
 
@@ -67,8 +68,4 @@ body {
 a:link {
     color: rgb(255, 216, 119);
   }
-  a:visited {
-    color: whitesmoke;
-  }
-
 

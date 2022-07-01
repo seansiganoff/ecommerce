@@ -3,6 +3,8 @@ import './App.css';
 import Nav from '../nav/Nav';
 import { useEffect, useState } from 'react';
 import AnimatedRoutes from '../AnimatedRoutes';
+import Footer from '../footer/Footer'
+
   
 
 function App() {
@@ -48,7 +50,7 @@ function App() {
   
 
   return (
-    <div>
+    <div className='App-container'>
       <Nav cart={cart}/>
       <AnimatedRoutes 
       cart={cart} 
@@ -58,6 +60,7 @@ function App() {
       handleClearProduct={handleClearProduct}
       
       />
+      <Footer />
     </div>
   );
 }
