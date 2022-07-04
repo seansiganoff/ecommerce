@@ -1,0 +1,140 @@
+.watches-container {
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.watch-header {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+  background-image: url('../../../images/watchbackground3.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+.watch-header-overlay {
+  background-color: rgba(255, 255, 255, 0.629);
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.697);
+}
+
+
+
+.watch-list-container {
+  width: 100%;
+  
+
+}
+
+.watch-list-container-overlay {
+  background-color: rgba(255, 255, 255, 0.78);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ 
+  padding-bottom: 6rem;
+  height: 100%;
+}
+
+.watches-h1-div {
+  font-size: 5rem;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 9rem 0 6rem 0;
+  width: 100%;
+  
+}
+
+.watches-h1-div h1 {
+  width: 100%;
+  padding: 1rem;
+  word-break: break-all;
+  font-size: 5rem;
+  color: rgb(0, 0, 0);
+}
+
+.select-watches {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: rgba(177, 58, 58, 0);
+  padding: 7rem 0;
+  text-align: center;
+  flex-wrap: wrap;
+  word-break: break-all;
+}
+
+.select-watches button {
+  padding: 7px 15px;
+  margin: 15px;
+  box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.052);
+  background-color: rgb(255, 255, 255);
+  border: solid rgb(222, 222, 222) 1px;
+  border-radius: 10px;
+  word-break: break-all;
+}
+  
+.watch-items {
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 2rem;
+}
+
+.watch-items img {
+  text-align: center;
+  height: 25rem;
+  width: 25rem;
+  
+}
+
+@media only screen and (max-width: 900px) {
+  .watches-h1-div h1 {
+    font-size: 11vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .watch-type-btn {
+    display: grid;
+  }
+  .select-watches {
+    display: grid;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .watch-items img {
+    height: 83vw;
+    width: 83vw;
+  }
+  .watch-items  {
+    font-size: 7vw;
+  }
+
+  
+}
+
+@media only screen and (max-width: 400px) {
+  .watches-h1-div h1 {
+    font-size: 2.2rem;
+  }
+
+  
+}
+

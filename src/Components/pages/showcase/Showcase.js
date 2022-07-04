@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 
 
+
 export default function Showcase({ handleAddProduct}) {
   const location = useLocation();
   const {getItem} = location.state;
@@ -31,6 +32,7 @@ export default function Showcase({ handleAddProduct}) {
           <img alt='Dayjust2' src={watch.url} />
         </div>
       </div>
+      
       <div className='showcase-description-div'>
         <div className='watch-description-div' >{watch.description}</div>
         <div className='watch-info-div'>{watch.info}</div>

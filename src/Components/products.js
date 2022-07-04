@@ -98,18 +98,6 @@ const products = [
         },
         
         {
-            id: 9,
-            url: require('../images/datejusthh.png'),
-            price: 17000,
-            model: "DATE JUST",
-            heading: "THE REFERENCE AMONG DIVERS' WATCHES",
-            description: "THE OYSTER PERPETUAL SUBMARINER IS A REFERENCE AMONG DIVER'S WATCHES: IT IS THE WATCH THAT UNLOCKED THE DEEP.",
-            info: "Launched in 1953, the Submariner was the first divers' wristwatch waterproof to a depth of 100 metres (330 feet). This was the second great breakthrough in the technical mastery of waterproofness, following the invention of the Oyster, the world’s first waterproof wristwatch, in 1926. In watchmaking, the Submariner represented a historic turning point; it set the standard for divers’ watches. Today, the Submariner is waterproof to a depth of 300 metres (1,000 feet).",
-            class: 'hh'
-        
-        },
-        
-        {
             id: 10,
             url: require('../images/gmtgold.webp'),
             price: 17000,
@@ -121,35 +109,14 @@ const products = [
         
         },
         
-         {
-            id: 11,
-            url: require('../images/presidentplatinum.png'),
-            price: 17000,
-            model: "DATE JUST",
-            heading: "THE REFERENCE AMONG DIVERS' WATCHES",
-            description: "THE OYSTER PERPETUAL SUBMARINER IS A REFERENCE AMONG DIVER'S WATCHES: IT IS THE WATCH THAT UNLOCKED THE DEEP.",
-            info: "Launched in 1953, the Submariner was the first divers' wristwatch waterproof to a depth of 100 metres (330 feet). This was the second great breakthrough in the technical mastery of waterproofness, following the invention of the Oyster, the world’s first waterproof wristwatch, in 1926. In watchmaking, the Submariner represented a historic turning point; it set the standard for divers’ watches. Today, the Submariner is waterproof to a depth of 300 metres (1,000 feet).",
-            class: 'ss'
-            
-        }
+         
     
 ]
 
-const datejust1 = {
-    id: 11,
-    url: require('../images/presidentplatinum.png'),
-    price: 17000,
-    model: "DATE JUST",
-    heading: "THE REFERENCE AMONG DIVERS' WATCHES",
-    description: "THE OYSTER PERPETUAL SUBMARINER IS A REFERENCE AMONG DIVER'S WATCHES: IT IS THE WATCH THAT UNLOCKED THE DEEP.",
-    info: "Launched in 1953, the Submariner was the first divers' wristwatch waterproof to a depth of 100 metres (330 feet). This was the second great breakthrough in the technical mastery of waterproofness, following the invention of the Oyster, the world’s first waterproof wristwatch, in 1926. In watchmaking, the Submariner represented a historic turning point; it set the standard for divers’ watches. Today, the Submariner is waterproof to a depth of 300 metres (1,000 feet).",
-    class: 'ss'
-    
-}
+
 
 
 module.exports = {
-    products,
-    datejust1
-   
+    products
+
 }

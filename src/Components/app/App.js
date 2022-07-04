@@ -3,7 +3,8 @@ import './App.css';
 import Nav from '../nav/Nav';
 import { useEffect, useState } from 'react';
 import AnimatedRoutes from '../AnimatedRoutes';
-import Footer from '../footer/Footer'
+import Footer from '../footer/Footer';
+
 
   
 

@@ -1,12 +1,5 @@
 
-/* html, body {
-  height: 100%;
-}
 
-body {
-  display: flex;
-  flex-direction: column;
-} */
 
 .app-container {
   margin: 0;
@@ -14,21 +7,6 @@ body {
 
 }
 
-/* .header {
-  margin: 0;
-  background-image: url("../../images/pp.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-} */
-
-/* .header-overlay {
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0.358);
-  width: 100%;
-  height: 100vh;
-} */
 
 a {
   color: gold;
@@ -40,3 +18,4 @@ a:link {
 a:visited {
   color: rgb(20, 160, 12);
 }
+

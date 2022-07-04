@@ -37,7 +37,7 @@ export default function Cart({cart, handleAddProduct, handleRemoveProduct, handl
           <button>Finish Shopping</button>
         </div>
         <div className='cart-total-button'></div>
-          <button className='remove-from-cart-button' onClick={() => handleClearCart()}>clear</button>
+          <button className='remove-from-cart-button' onClick={() => handleClearCart()}>Clear All Items</button>
         <br />
       </div>
     )
@@ -75,7 +75,7 @@ export default function Cart({cart, handleAddProduct, handleRemoveProduct, handl
         </div>
       </div>
       <div>
-        <img alt={items.model} src={items.url} />
+        <img className='cart-item-img' alt={items.model} src={items.url} />
         <div className='item-quantity'>
           <button className='cart-minus-add-btn' onClick={() => handleRemoveProduct(items)}>-</button>
           <div className='quantity-number'>{items.quantity}</div>

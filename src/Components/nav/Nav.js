@@ -11,11 +11,8 @@ export default function Nav({cart}) {
     const reducedSum = itemsInCart.reduce((prev, cur) => prev + cur, 0);
   return (
         <nav className='nav'>
-            <Link to="/" className='site-title'>
-                <img alt='logo' className='logo' src={require('../../images/logo3.png')} />
-            </Link>
+                <CustomeLink to="/watches">Watches</CustomeLink>
             <ul>
-                <CustomeLink to="/new">new</CustomeLink>
                 <CustomeLink to="/">Home</CustomeLink>
                 <CustomeLink to="/users/login">Login</CustomeLink>
                 <CustomeLink to="/users/cart"><BsBag /><span className='cart-length'>{cart.length === 0 ? "" : reducedSum}</span></CustomeLink>

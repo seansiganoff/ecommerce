@@ -5,6 +5,8 @@ import Register from './pages/register';
 import Cart from './pages/cart/Cart';
 import Showcase from './pages/showcase/Showcase';
 import Header from './pages/header/Header'
+import Watches from './pages/watches/Watches';
+
 
 
 
@@ -14,6 +16,7 @@ function AnimatedRoutes({cart, handleAddProduct, handleRemoveProduct, handleClea
     return (
         <div className='AnimatedRoutes'>
             <Routes location={location} key={location.pathname}>
+            <Route path="/watches" element={<Watches />} />
                 <Route path="/showcase" element={<Showcase cart={cart} handleAddProduct={handleAddProduct}/>} />
                 <Route path="/users/register" element={<Register />} />
                 <Route path="/" element={<Header />} />
