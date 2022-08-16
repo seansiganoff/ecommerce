@@ -6,14 +6,10 @@ import { motion } from 'framer-motion';
 
 
 
-
-
-
-
 export default function Cart({cart, handleAddProduct, handleRemoveProduct, handleClearCart, handleClearProduct}) {
   
   
-  console.log(cart)
+  
   //Converts the numbers and add's the final sum
   function getGrandTotal() {
     

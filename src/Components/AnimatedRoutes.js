@@ -16,12 +16,12 @@ function AnimatedRoutes({cart, handleAddProduct, handleRemoveProduct, handleClea
     return (
         <div className='AnimatedRoutes'>
             <Routes location={location} key={location.pathname}>
-            <Route path="/watches" element={<Watches />} />
+                <Route path="/watches" element={<Watches />} />
                 <Route path="/showcase" element={<Showcase cart={cart} handleAddProduct={handleAddProduct}/>} />
-                <Route path="/users/register" element={<Register />} />
+                <Route path="/register" element={<Register />} />
                 <Route path="/" element={<Header />} />
                 <Route path="/users/cart" element={<Cart cart={cart} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} handleClearCart={handleClearCart} handleClearProduct={handleClearProduct}/>} />
-                <Route path="/users/login" element={<Login />} />
+                <Route path="/login" element={<Login />} />
             </Routes>
         </div>
     )

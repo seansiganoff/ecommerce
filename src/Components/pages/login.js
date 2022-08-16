@@ -18,7 +18,7 @@ export default function Login() {
                     </div>
                     <input type="submit" />
                 </form>
-                <Link to='/users/register'><p>Not Registered? <br />Click Here To Register.</p></Link>
+                <Link to='/register'><p>Not Registered? <br />Click Here To Register.</p></Link>
             </div>
         </motion.div>
         
