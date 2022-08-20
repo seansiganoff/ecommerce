@@ -2,6 +2,7 @@
 import './showcase.css';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 
 
@@ -17,6 +18,9 @@ export default function Showcase({ handleAddProduct}) {
     return `$${string1},${string2}`
   }
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   return (
     <motion.div className='showcase-container' initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 1}}} exit={{opacity: 0}}>

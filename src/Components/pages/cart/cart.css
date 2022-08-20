@@ -67,19 +67,36 @@ body {
 
 .item-quantity {
     display: flex;
-    justify-content: center;
+    border: 1px solid rgb(137, 137, 137);
+    border-radius: 30px;
+    width: 30%;
+    margin: 0 auto;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
-.cart-minus-add-btn {
+.cart-minus-btn {
     margin: 0 10px;
+    padding: 2px 15px;
+    padding-bottom: 4px;
+    border: none;
 }
+.cart-add-btn {
+    margin: 0 10px;
+    padding: 2px 11px;
+    padding-bottom: 4px;
+    border: none;
+}
+
 .cart-total-button {
     padding: 0.5rem;
 }
+
 .cart-total-button button {
     padding: 0.5rem;
     border-radius: 8px;
     width: 100%;
+    
 }
 
 .cart-item-text {

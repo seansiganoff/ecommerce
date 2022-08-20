@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { products } from '../../products';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -39,6 +39,9 @@ export default function Watches() {
     
   }
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <motion.div className='watches-container' initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 1}}} exit={{opacity: 0}}>

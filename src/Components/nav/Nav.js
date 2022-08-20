@@ -14,7 +14,6 @@ export default function Nav({cart}) {
                 <CustomeLink to="/watches">Watches</CustomeLink>
             <ul>
                 <CustomeLink to="/">Home</CustomeLink>
-                <CustomeLink to="/login">Login</CustomeLink>
                 <CustomeLink to="/users/cart"><BsBag /><span className='cart-length'>{cart.length === 0 ? "" : reducedSum}</span></CustomeLink>
             </ul>
         </nav>

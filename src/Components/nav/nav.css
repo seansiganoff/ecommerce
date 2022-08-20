@@ -11,7 +11,7 @@ body {
 }
 
 .nav {
-    background-color: rgba(119, 118, 118, 0.186);
+    background-color: rgba(0, 0, 0, 0.685);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -72,4 +72,30 @@ a:link {
   }
   a:visited {
     color: rgb(20, 160, 12);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .nav {
+        padding: 1rem 10px;
+
+      }
+  
+  }
+
+  @media only screen and (max-width: 400px) {
+    .nav {
+        padding: 1rem 10px;
+        font-size: 7vw;
+        gap: 0;
+      }
+  
+  }
+
+  @media only screen and (max-width: 300px) {
+    .nav {
+        display: grid;
+        justify-content: center;
+        
+      }
+  
   }

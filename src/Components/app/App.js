@@ -9,12 +9,14 @@ import Footer from '../footer/Footer';
   
 
 function App() {
-  const cartsFromLocalStorage = JSON.parse(localStorage.getItem("cart") || "[]")
+  const cartsFromLocalStorage = JSON.parse(localStorage.getItem("cartInfo") || "[]")
   const [cart, setCart] = useState(cartsFromLocalStorage);
   
   
   
-
+  useEffect(() => {
+    localStorage.setItem("cartInfo", JSON.stringify(cart))
+  }, [cart])
   
   const handleClearProduct = (product) => {
     setCart(cart.filter(item => item.id !== product.id))

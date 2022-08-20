@@ -1,7 +1,7 @@
 import React from 'react';
 import './cart.css'
 import { motion } from 'framer-motion';
-
+import { useEffect } from 'react';
 
 
 
@@ -24,6 +24,8 @@ export default function Cart({cart, handleAddProduct, handleRemoveProduct, handl
     const string2 = toString.slice(-3).join('')
     const totalString = `Your total is $${string1},${string2}`;
     
+
+     
     return (
       <div className='cart-total'>
         <div className='cart-total-button'>
@@ -73,9 +75,9 @@ export default function Cart({cart, handleAddProduct, handleRemoveProduct, handl
       <div>
         <img className='cart-item-img' alt={items.model} src={items.url} />
         <div className='item-quantity'>
-          <button className='cart-minus-add-btn' onClick={() => handleRemoveProduct(items)}>-</button>
+          <button className='cart-minus-btn' onClick={() => handleRemoveProduct(items)}>-</button>
           <div className='quantity-number'>{items.quantity}</div>
-          <button className='cart-minus-add-btn' onClick={() => handleAddProduct(items)}>+</button>
+          <button className='cart-add-btn' onClick={() => handleAddProduct(items)}>+</button>
         </div>
       </div>
     </div>
@@ -83,6 +85,11 @@ export default function Cart({cart, handleAddProduct, handleRemoveProduct, handl
   }
   
 
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
     <motion.div className='cart-container' initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 1}}} exit={{opacity: 0}}>
       <div className='cart-overlay'>
