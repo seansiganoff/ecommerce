@@ -1,0 +1,50 @@
+
+
+.success-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0;
+    text-align: center;
+}
+
+.success-header-text {
+    font-size: 5vw;
+    word-spacing: 5px;
+    color: green;
+}
+
+.success-container h4 {
+    font-size: 2vw;
+    word-spacing: 10px;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 800px) {
+    .success-container h4 {
+        font-size: x-small;
+        padding: 0 20px;
+        word-break: keep-all;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .success-header-text {
+        font-size: large;
+        padding: 0 20px;
+        
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .success-header-text {
+        font-size: 9vw;
+        padding: 0 20px;
+        word-break: break-all;
+    }
+
+    .success-container h4 {
+        word-break: break-all;
+        font-size: 6vw;
+    }
+}

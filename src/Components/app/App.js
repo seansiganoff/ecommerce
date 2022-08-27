@@ -4,7 +4,7 @@ import Nav from '../nav/Nav';
 import { useEffect, useState } from 'react';
 import AnimatedRoutes from '../AnimatedRoutes';
 import Footer from '../footer/Footer';
-
+import '@stripe/stripe-js'
 
   
 
@@ -53,12 +53,12 @@ function App() {
     <div className='App-container'>
       <Nav cart={cart}/>
       <AnimatedRoutes 
-      cart={cart} 
-      handleAddProduct={handleAddProduct} 
-      handleRemoveProduct={handleRemoveProduct} 
-      handleClearCart={handleClearCart}
-      handleClearProduct={handleClearProduct}
-      
+        cart={cart} 
+        handleAddProduct={handleAddProduct} 
+        handleRemoveProduct={handleRemoveProduct} 
+        handleClearCart={handleClearCart}
+        handleClearProduct={handleClearProduct}
+        setCart={setCart}
       />
       <Footer />
     </div>

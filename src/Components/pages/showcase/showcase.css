@@ -28,14 +28,14 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 4rem;
+    padding: 5rem 2rem;
     flex-wrap: wrap-reverse;
 }
 .showcase-left-side {
     height: 70%;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 35%;
     display: grid;
     justify-content: center;
     align-items: left;
@@ -117,22 +117,33 @@
 }
 
 
+@media only screen and (max-width: 1200px) {
+    .showcase-container h1 {
+        font-size: 5vw;
+    }
+}
 @media only screen and (max-width: 1000px) {
     .watch-info-div {
         padding: 1rem;
         width: 100%;
     }
 }
-
+@media only screen and (max-width: 900px) {
+    .showcase-left-side {
+        width: 100%;
+        padding: 1rem 20px;
+    }
+    
+}
 
 @media only screen and (max-width: 700px) {
     .watch-container {
-        padding: 0;
+        padding: 5rem 15px 15px 15px;
     }
+    
     .watch-container img {
         height: 80vw;
         width: 80vw;
-        margin-top: 3.5rem;
     }
     .watch-description-div {
         font-size: 6vw;
@@ -159,5 +170,12 @@
     .watch-info-div {
         font-size: 4vw;
     }
+    .add-to-cart-button {
+        font-size: 5.5vw;
+    }
+    .showcase-left-side {
+        padding: 20px 10px;
+    }
     
 }
+

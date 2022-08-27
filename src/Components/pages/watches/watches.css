@@ -12,7 +12,6 @@
 .watch-header {
   width: 100%;
   background-color: rgb(255, 255, 255);
-  min-height: 100vh;
   background-image: url('../../../images/watchbackground3.webp');
   background-position: center;
   background-repeat: no-repeat;
@@ -24,7 +23,7 @@
 .watch-header-overlay {
   background-color: rgba(255, 255, 255, 0.629);
   width: 100%;
-  min-height: 100vh;
+
   display: block;
   justify-content: center;
   align-items: center;
@@ -75,7 +74,7 @@
   align-items: center;
   margin: 0;
   background-color: rgba(177, 58, 58, 0);
-  padding: 7rem 0;
+  padding-bottom: 3rem;
   text-align: center;
   flex-wrap: wrap;
   word-break: break-all;
@@ -99,13 +98,20 @@
   text-align: center;
   padding: 3rem 0;
   font-size: 2rem;
+  
 }
 
 .watch-items img {
   text-align: center;
   height: 25rem;
   width: 25rem;
-  
+  transition: 0.6s ease-out;
+  border-radius: 50px;
+}
+
+.watch-items img:hover {
+  box-shadow: 1px 7px 100px rgba(93, 93, 93, 0.76);
+  transition: 0.7s ease-in-out;
 }
 
 @media only screen and (max-width: 900px) {

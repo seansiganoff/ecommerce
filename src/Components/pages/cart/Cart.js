@@ -2,13 +2,43 @@ import React from 'react';
 import './cart.css'
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
+import { loadStripe } from '@stripe/stripe-js';
+
 
 
 
 
 export default function Cart({cart, handleAddProduct, handleRemoveProduct, handleClearCart, handleClearProduct}) {
   
-  
+  let stripePromise;
+  const getStripe = () => {
+    if(!stripePromise) {
+      stripePromise = loadStripe(process.env.REACT_APP_STRIPE_KEY)
+    }
+
+    return stripePromise;
+  }
+
+  const checkoutItems = cart.map((items) => (
+    {
+      price: items.checkoutprice,
+      quantity: items.quantity
+    }
+  ))
+ 
+
+  const checkoutOptions = {
+    lineItems: checkoutItems,
+    mode: "payment",
+    successUrl: `${window.location.origin}/checkout/success`,
+    cancelUrl:  `${window.location.origin}/cancel`
+  }
+
+  const redirectToCheckout = async () => {
+    const stripe = await getStripe();
+    const {error} = await stripe.redirectToCheckout(checkoutOptions)
+    console.log('stripe checkout error', error);
+  }
   
   //Converts the numbers and add's the final sum
   function getGrandTotal() {
@@ -32,7 +62,7 @@ export default function Cart({cart, handleAddProduct, handleRemoveProduct, handl
           {totalString}
         </div>
         <div className='cart-total-button'>
-          <button>Finish Shopping</button>
+          <button onClick={redirectToCheckout} >Checkout</button>
         </div>
         <div className='cart-total-button'></div>
           <button className='remove-from-cart-button' onClick={() => handleClearCart()}>Clear All Items</button>
@@ -89,6 +119,8 @@ export default function Cart({cart, handleAddProduct, handleRemoveProduct, handl
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
+  
   
   return (
     <motion.div className='cart-container' initial={{opacity: 0}} animate={{opacity: 1, transition:{duration: 1}}} exit={{opacity: 0}}>

@@ -2,10 +2,11 @@ import React from 'react';
 import './home.css'
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
     const [backgroundChange, setBackgroundChange] = useState(true);
+    const navigate = useNavigate();
 
     
     // blacks-out header background on scroll down
@@ -33,31 +34,23 @@ export default function Home() {
             <div>
                 <h6 className='info-h1'>TIMELESS CLASSICS</h6>
                 <div className='header-info-left'>
-                    <Link to="/watches">
-                        <img alt='watch' src={require('../../../images/sssubbackground.jpg')} />
-                    </Link>
+                        <img className='header-info-left-img' alt='watch' src={require('../../../images/sssubbackground.jpg')} onClick={() => navigate('/watches')}/>
                     <h4>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga accusamus consectetur harum soluta. 
                         Neque repellendus temporibus iusto maxime eum blanditiis dolorum perferendis modi! Magnam repellat facilis eveniet dolores 
                         perspiciatis illum!
                     </h4>
                 </div>
-                
-                
                 <div className='header-info-right'>
                     <h4>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga accusamus consectetur harum soluta. 
                         Neque repellendus temporibus iusto maxime eum blanditiis dolorum perferendis modi! Magnam repellat facilis eveniet dolores 
                         perspiciatis illum!
                     </h4>
-                    <Link to="/watches">
-                        <img alt='watch' src={require('../../../images/hhbackground.webp')} />
-                    </Link>
+                        <img className='header-info-right-img' alt='watch' src={require('../../../images/hhbackground.webp')} onClick={() => navigate('/watches')}/>
                 </div>
                 <div className='header-info-left'>
-                    <Link to="/watches">
-                        <img alt='watch' src={require('../../../images/master.jpg')} />
-                    </Link>
+                        <img className='header-info-left-img' alt='watch' src={require('../../../images/master.jpg')} onClick={() => navigate('/watches')}/>
                     <h4>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga accusamus consectetur harum soluta. 
                         Neque repellendus temporibus iusto maxime eum blanditiis dolorum perferendis modi! Magnam repellat facilis eveniet dolores 

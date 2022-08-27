@@ -72,6 +72,7 @@
   letter-spacing: 0.4rem;
   text-align: center;
   font-weight: 500;
+  
 }
 
 
@@ -86,13 +87,19 @@
   
 }
 
-.header-info-left img {
+.header-info-left-img {
   width: 70%;
   height: auto;
   border-radius: 20px;
-  box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.592);
+  box-shadow: 1px 7px 100px rgba(93, 93, 93, 0.927);
+  transition: 1.5s ease-out;
 }
 
+.header-info-left-img:hover {
+  transition: 0.5s ease-in-out;
+  box-shadow: 1px 7px 100px rgb(0, 0, 0);
+  cursor: pointer;
+}
 
 
 .header-info-right {
@@ -105,12 +112,18 @@
 
 
 
-.header-info-right img {
+.header-info-right-img {
   width: 70%;
   height: auto;
   border-radius: 20px;
-  box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.592);
-  
+  box-shadow: 1px 7px 100px rgba(93, 93, 93, 0.927);
+  transition: 1.5s ease-out;
+}
+
+.header-info-right-img:hover {
+  transition: 0.5s ease-in-out;
+  box-shadow: 1px 7px 100px rgb(0, 0, 0);
+  cursor: pointer;
 }
 
 .info-h1 {
@@ -122,6 +135,7 @@
   font-weight: 100;
   letter-spacing: 4px;
   word-spacing: 15px;
+  text-shadow: 1px 1px 30px rgb(139, 139, 139);
 }
 
 h4 {
