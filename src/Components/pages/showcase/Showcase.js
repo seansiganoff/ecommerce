@@ -9,8 +9,9 @@ import { useEffect } from 'react';
 export default function Showcase({ handleAddProduct}) {
   const location = useLocation();
   const {getItem} = location.state;
-  let watch = getItem;
+  let watch = getItem; //this will be referencing  the watch that was choson from the previous page.
  
+
   function getPrice(item) {
     let itemToString = item.toString().split('')
     const string1 = itemToString.slice(0, 2).join('')
