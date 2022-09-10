@@ -219,12 +219,16 @@ h4 {
   .header-background {
     background-image: url('../../../images/rolex-mobile-11.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -380px;
     background-size: cover;
     animation: none;
     width: 100vw;
     height: 100vh;
     background-attachment: scroll;
+  }
+
+  .header-overlay-container {
+    background-color: rgba(0, 0, 0, 0.765);
   }
 
 
