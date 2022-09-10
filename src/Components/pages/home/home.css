@@ -216,22 +216,17 @@ h4 {
     font-size: 1.8rem;
   }
 
-  @keyframes animate {
-    0%{
-      background-image: url('../../../images/rolex-mobile-12.jpg');
-    } 20%{
-      background-image: url('../../../images/rolex-mobile-12.jpg');
-    } 40%{
-      background-image: url('../../../images/rolex-mobile-12.jpg');
-    } 60%{
-      background-image: url('../../../images/rolex-mobile-12.jpg');
-    } 80%{
-      background-image: url('../../../images/rolex-mobile-12.jpg');
-    } 100%{
-      background-image: url('../../../images/rolex-mobile-12.jpg');
-    }
+  .header-background {
+    background-image: url('../../../images/rolex-mobile-11.jpg');
+    background-repeat: no-repeat;
+    background-position: -650px;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    animation-name: none;
+    animation-duration: 0ms;
+    transition: none;
   }
-
 
 
 }
