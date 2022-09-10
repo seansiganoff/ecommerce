@@ -24,7 +24,7 @@
   0%{
     background-image: url('../../../images/rolexbackground10.jpg');
   } 20%{
-    background-image: url('../../../images/rolexbackground13.jpg');
+    background-image: url('../../../images/rolex-mobile-11.jpg');
   } 40%{
     background-image: url('../../../images/rolexbackground15.jpg');
   } 60%{
@@ -221,7 +221,7 @@ h4 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    animation: none;
   }
 
 
