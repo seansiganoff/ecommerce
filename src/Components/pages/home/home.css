@@ -218,17 +218,17 @@ h4 {
 
   @keyframes animate {
     0%{
-      background-image: url('../../../images/rolex-mobile-1.jpg');
+      background-image: url('../../../images/rolex-mobile-12.jpg');
     } 20%{
-      background-image: url('../../../images/rolex-mobile-8.jpg');
+      background-image: url('../../../images/rolex-mobile-12.jpg');
     } 40%{
-      background-image: url('../../../images/rolex-mobile-6.jpg');
+      background-image: url('../../../images/rolex-mobile-12.jpg');
     } 60%{
-      background-image: url('../../../images/rolex-mobile-11.jpg');
+      background-image: url('../../../images/rolex-mobile-12.jpg');
     } 80%{
-      background-image: url('../../../images/rolex-mobile-10.jpg');
+      background-image: url('../../../images/rolex-mobile-12.jpg');
     } 100%{
-      background-image: url('../../../images/rolex-mobile-2.jpg');
+      background-image: url('../../../images/rolex-mobile-12.jpg');
     }
   }
 
