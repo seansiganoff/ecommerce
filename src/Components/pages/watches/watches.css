@@ -135,6 +135,16 @@
   .select-watches {
     display: grid;
   }
+  .watch-header-overlay {
+    background-color: black;
+    color: white;
+  }
+  .watches-h1-div h1 {
+    color: white;
+  }
+  .watches a:visited {
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -145,6 +155,7 @@
   .watch-items  {
     font-size: 7vw;
   }
+  
 
   
 }
