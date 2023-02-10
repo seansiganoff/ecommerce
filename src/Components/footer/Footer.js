@@ -7,24 +7,25 @@ export default function Footer() {
         <div className='footer-container'>
           <div className='footer-section'>
             <h4 className='footer-h4'>Company</h4>
-            About Us<br />
+            <p>About Us<br />
             Our Services<br />
             Privacy Policy<br />
-            Affiliate Program
+            Affiliate Program</p>
           </div>
           <div className='footer-section'>
             <h4 className='footer-h4'>FAQ</h4>
-            Shipping<br />
+            <p>Shipping<br />
             Returns<br />
             Order Status<br />
             Payment Options
+            </p>
           </div>
           <div className='footer-section'>
             <h4 className='footer-h4'>Contact Us</h4>
-            Email<br />
+            <p>Email<br />
             Phone<br />
             Chat<br />
-            
+            </p>
           </div>
         </div>
     </div>

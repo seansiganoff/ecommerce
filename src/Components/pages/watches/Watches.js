@@ -61,13 +61,13 @@ export default function Watches() {
                 <button onClick={() => filterWatchesByClass('gold')}>GOLD</button>
               </div>
           </div>
+          <p>Choose a watch to view details</p>
+          <div className='watches'>{GetAllWatchesFromProducts()}</div>
+          
         </div>
+        
       </div>  
-      <div className='watch-list-container'>
-        <div className='watch-list-container-overlay'>
-          {GetAllWatchesFromProducts()}
-        </div>
-      </div>     
+        
       
     </motion.div>
   )
