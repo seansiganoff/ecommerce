@@ -21,18 +21,21 @@ export default function Home() {
 
     
 ///////////////////////////////// blackout background and rolex logo on main page /////////////////////////////////
-    
+  
     let changeBackground = () => {
-        if(window.scrollY > 150) {
-            document.getElementById('blackout').style.background = 'rgba(0, 0, 0)';
-            document.getElementById('header-logo-container').style.opacity = '0';
-            document.getElementById('header-logo-container').style.transition = 'visibility 0s 0.5s, opacity 0.5s linear';
-        } else {
-            document.getElementById('blackout').style.background = 'rgba(0, 0, 0, 0.457)';
-            document.getElementById('header-logo-container').style.opacity = '1';
-            document.getElementById('header-logo-container').style.transition = 'opacity 1s linear';
-            
+        if(document.URL === 'http://localhost:3000/') {
+            if(window.scrollY > 150) {
+                document.getElementById('blackout').style.background = 'rgba(0, 0, 0)';
+                document.getElementById('header-logo-container').style.opacity = '0';
+                document.getElementById('header-logo-container').style.transition = 'visibility 0s 0.5s, opacity 0.5s linear';
+            } else {
+                document.getElementById('blackout').style.background = 'rgba(0, 0, 0, 0.457)';
+                document.getElementById('header-logo-container').style.opacity = '1';
+                document.getElementById('header-logo-container').style.transition = 'opacity 1s linear';
+                
+            }
         }
+        
     }
     
     window.addEventListener('scroll', changeBackground)

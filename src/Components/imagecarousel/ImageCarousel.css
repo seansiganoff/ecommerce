@@ -10,7 +10,7 @@
 .carousel-container {
   width: 80%;
   background-color: rgb(240, 240, 240);
-  padding: 12rem 0 4rem 0;
+  padding: 5rem 0 4rem 0;
   margin: 0 auto;
 }
 
@@ -23,6 +23,22 @@
     box-sizing: border-box;
     width: 95%;
     margin: 0 auto;
+}
+
+.carousel-text {
+  width: 85%;
+  margin: 4rem auto;
+  text-align: left;
+}
+
+.carousel-text h2 {
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+
+.carousel-text p {
+  font-weight: 100;
+  
 }
 
 .image-overlay {
@@ -102,11 +118,23 @@
   .paralax-image {
     display: none;
   }
+
+  .carousel-container {
+    padding-top: 2rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .carousel-container {
     padding-top: 2rem;
+  }
+
+  .carousel-text p {
+    font-size: x-small;
+  }
+
+  .carousel-card {
+    padding: 0px;
   }
 }
 

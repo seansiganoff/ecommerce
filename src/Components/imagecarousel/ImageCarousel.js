@@ -34,7 +34,10 @@ const ImageCarousel = () => {
   return (
     <div className='carousel-section'>
       <div className='carousel-container'>
-        
+        <div className='carousel-text'>
+          <h2>EACH ROLEX MODEL IS DISTINCT. SEE WHICH ONE TAILORS TO YOU. </h2>
+          <p>Every Rolex is fully customizable. From the dial, bezel, clasp or band.</p>
+        </div>
         <Carousel responsive={responsive}>
           <div className='carousel-card'>
             <div className='carousel-image-container'>

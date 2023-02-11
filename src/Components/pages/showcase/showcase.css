@@ -51,7 +51,8 @@
 
 .showcase-left-side p {
     font-size: 1.5rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 3px;
+    word-spacing: 4px;
 }
 
 .price {
@@ -95,8 +96,8 @@
     color: rgb(84, 84, 84);
     text-align: center;
     padding: 4rem;
-    letter-spacing: 0.1rem;
-    
+    letter-spacing: 3px;
+    word-spacing: 4px;
 }
 
 .watch-description-div {
@@ -106,7 +107,8 @@
     margin: 0 auto;
     font-weight: 900;
     padding-bottom: 4rem;
-    word-spacing: 10px;
+    letter-spacing: 3px;
+    word-spacing: 4px;
 }
 
 
@@ -141,7 +143,9 @@
         padding: 1rem 20px;
     }
     .watch-description-div {
-        font-size: medium;
+        font-size: large;
+        width: 90%;
+        font-weight: 800;
     }
     .watch-info-div {
         font-size: xx-small;
