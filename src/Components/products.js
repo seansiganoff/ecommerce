@@ -91,7 +91,7 @@ const products = [
         {
             id: 8,
             url: require('../images/datess.png'),
-            price: 8500,
+            price: 10000,
             model: "AIR-KING",
             heading: "THE REFERENCE AMONG DIVERS' WATCHES",
             description: "THE OYSTER PERPETUAL SUBMARINER IS A REFERENCE AMONG DIVER'S WATCHES: IT IS THE WATCH THAT UNLOCKED THE DEEP.",
