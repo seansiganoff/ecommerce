@@ -23,7 +23,10 @@ export default function Home() {
 ///////////////////////////////// blackout background and rolex logo on main page /////////////////////////////////
   
     let changeBackground = () => {
-        if(document.URL === 'http://localhost:3000/') {
+
+        //production settings for blackout screen is: https://seans-rolex-watches.netlify.app/
+        //none production settings for blackout screen is: http://localhost:3000/
+        if(document.URL === 'https://seans-rolex-watches.netlify.app/') {
             if(window.scrollY > 150) {
                 document.getElementById('blackout').style.background = 'rgba(0, 0, 0)';
                 document.getElementById('header-logo-container').style.opacity = '0';
