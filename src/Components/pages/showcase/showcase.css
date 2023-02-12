@@ -96,8 +96,8 @@
     color: rgb(84, 84, 84);
     text-align: center;
     padding: 4rem;
-    letter-spacing: 3px;
-    word-spacing: 4px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
 }
 
 .watch-description-div {
@@ -107,8 +107,8 @@
     margin: 0 auto;
     font-weight: 900;
     padding-bottom: 4rem;
-    letter-spacing: 3px;
-    word-spacing: 4px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
 }
 
 
