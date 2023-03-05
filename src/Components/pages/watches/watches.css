@@ -114,12 +114,12 @@
   width: 20rem;
   transition: 0.6s ease-out;
   border-radius: 50px;
+  transition: all  0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .watch-items img:hover {
-  height: 24rem;
-  width: 24rem;
-  transition: 0.7s ease-in-out;
+  transform: scale(1.37);
 }
 
 @media only screen and (max-width: 900px) {
