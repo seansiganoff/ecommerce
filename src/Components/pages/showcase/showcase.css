@@ -1,10 +1,6 @@
 
 
 .showcase-container {
-    background-image: url("../../../images/blackbackground.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     width: 100%;
     height: auto;
     display: grid;
@@ -13,14 +9,13 @@
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-    color: rgba(255, 255, 255, 0.727);
+    color: rgba(50, 50, 50, 0.727);
 }
 
 
 
 .watch-container img {
-    height: 28rem;
-    width: 28rem;
+   width: 100%;
 }
 
 .watch-container {
@@ -39,7 +34,7 @@
     display: grid;
     justify-content: center;
     align-items: left;
-    color: rgb(255, 255, 255);
+    color: rgb(44, 44, 44);
     text-align: left;
 }
 .showcase-container h1 {
@@ -91,7 +86,7 @@
     justify-content: center;
     align-items: center;
     text-align: left;
-    background-color: whitesmoke;
+    background-color: rgb(247, 247, 247);
     width: 100%;
     color: rgb(84, 84, 84);
     text-align: center;
@@ -117,7 +112,7 @@
     margin-bottom: 1rem;
     width: 70%;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.674);
+    background-color: rgba(0, 0, 0, 0.345);
     color: whitesmoke;
     padding: 2rem;
     border-radius: 10px;

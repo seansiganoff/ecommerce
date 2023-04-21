@@ -11,9 +11,9 @@ export default function Nav({cart}) {
     const reducedSum = itemsInCart.reduce((prev, cur) => prev + cur, 0);
   return (
         <nav className='nav'>
-                <CustomeLink to="/watches">Watches</CustomeLink>
+                <CustomeLink to="/watches">WATCHES</CustomeLink>
             <ul>
-                <CustomeLink to="/">Home</CustomeLink>
+                <CustomeLink to="/">HOME</CustomeLink>
                 <CustomeLink to="/cart"><BsBag /><span className='cart-length'>{cart.length === 0 ? "" : reducedSum}</span></CustomeLink>
             </ul>
         </nav>

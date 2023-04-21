@@ -20,13 +20,13 @@ export default function Home() {
     
 
     
-///////////////////////////////// blackout background and rolex logo on main page /////////////////////////////////
+///////////////////////////////// blackout background and rolex logo on main page when scrolling /////////////////////////////////
   
     let changeBackground = () => {
 
         //production settings for blackout screen is: https://seans-rolex-watches.netlify.app/
         //none production settings for blackout screen is: http://localhost:3000/
-        if(document.URL === 'https://seans-rolex-watches.netlify.app/') {
+        if(document.URL === 'http://localhost:3000/') {
             if(window.scrollY > 150) {
                 document.getElementById('blackout').style.background = 'rgba(0, 0, 0)';
                 document.getElementById('header-logo-container').style.opacity = '0';
@@ -44,9 +44,7 @@ export default function Home() {
     window.addEventListener('scroll', changeBackground)
 
     
-
     
-
     
 
       function info() {
@@ -60,7 +58,7 @@ export default function Home() {
                             Rolex offers a wide assortment of Classic and Professional watch models to suit any wrist. 
                             Discover the broad selection of Rolex watches to find a perfect combination of style and functionality.
                         </p>
-                        <button className='carousel-button'>VIEW COLLECTION</button>
+                        <button className='carousel-button' onClick={() => navigate('/watches')}>VIEW COLLECTION</button>
                     </div>
                 </div>
                 <h6 className='info-h1 reveal'>EVERY ROLEX TELLS A STORY</h6>

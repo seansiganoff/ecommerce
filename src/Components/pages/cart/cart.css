@@ -4,18 +4,14 @@ body {
 }
 
 .cart-container {
-    background-image: url('../../../images/Radcliffe_Baltimore_004_AR-2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 0px -300px ;
+    background-color: rgb(255, 255, 255);
     margin: 0;
 }
 
 
 .cart-overlay {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.543);
+    background-color: rgba(0, 0, 0, 0);
     height: 100%;
     display: flex;
     justify-content: center;
