@@ -204,6 +204,21 @@ h4 {
   .info-h1 {
     width: 90%;
   }
+
+  .header-background {
+    background-image: url('../../../images/rolex-mobile-11.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: none;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: scroll;
+  }
+
+  .header-overlay-container {
+    background-color: rgba(0, 0, 0, 0.765);
+  }
 }
 
 
@@ -256,20 +271,7 @@ h4 {
     font-size: 1.8rem;
   }
 
-  .header-background {
-    background-image: url('../../../images/rolex-mobile-11.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    animation: none;
-    width: 100vw;
-    height: 100vh;
-    background-attachment: scroll;
-  }
-
-  .header-overlay-container {
-    background-color: rgba(0, 0, 0, 0.765);
-  }
+  
 
 
 }
