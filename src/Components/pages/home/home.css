@@ -19,8 +19,6 @@
   animation-duration: 11.5s;
   animation-iteration-count: infinite;
   font-family: 'Lato', sans-serif;
-  object-fit: cover;
-  aspect-ratio: 3/2;
 }
 @keyframes animate {
   0%{
