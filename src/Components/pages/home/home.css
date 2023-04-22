@@ -7,20 +7,20 @@
 
 
 .header-background {
-  background-image: url("../../../images/rolexbackground7.jpg");
+  background-image: url("../../../images/rolexbackground3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 120vh;
   background-attachment: fixed;
-  
-  animation-name: animate;
+  /* animation-name: animate;
   animation-duration: 35s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
   font-family: 'Lato', sans-serif;
 }
-@keyframes animate {
+/* home screen background picture animation  */
+/* @keyframes animate {
   0%{
     background-image: url('../../../images/rolexbackground10.jpg');
   } 20%{
@@ -34,7 +34,7 @@
   } 100%{
     background-image: url('../../../images/rolexbackground15.jpg');
   }
-}
+} */
 
 .header-overlay-container {
   background-color: rgba(0, 0, 0, 0.598);
